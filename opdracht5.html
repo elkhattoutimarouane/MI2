@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+    
+    var canvas = document.createElement('canvas');
+canvas.width = canvas.height = 320;
+var context = canvas.getContext('2d');
+for (var x = 0; x < 12; x++) for (var y = 0; y < 12; y++) {
+  context.fillStyle = (x + y) % 2 ? 'white' : 'black';
+  context.fillRect(40 * x, 40 * y, 40, 40)
+}
+document.body.appendChild(canvas);
+    
+    
+    </script>
+
+</body>
+</html>
